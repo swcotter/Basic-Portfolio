@@ -4,11 +4,16 @@ HTML Elements
 html {
 	position: relative;
 }
+body {
+	background-image: url("img_tree.gif"), url("paper.gif");
+	background-color: #cccccc;
+  }
+
 html, body {
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	background-color: #efefef;
-	background: #efefef url("../images/shattered.png");
+	background-color: #ffffff;
+	background: #dddddd;
 }
 
 h1, h2, h3, h4, h5, h6 {
