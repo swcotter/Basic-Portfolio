@@ -191,3 +191,9 @@ footer {
     background-color: #666666;
     border-top: 7px solid #4aaaa5;
 }
+
+#social {
+	width: 270px;
+	float: right;
+	text-align: center;
+}
