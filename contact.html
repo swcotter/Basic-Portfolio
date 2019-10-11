@@ -1,56 +1,93 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <title>Sam Cotter / Contact</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="name">
-                <div class="logo">Sam Cotter</div>
+    <!-- UNIVERSAL ELEMENTS -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+            <div class="container pl-3">
+            <div class="navRow row">
+                <div class="float-left px-0">
+                    <a class="navbar-brand px-4 py-3 mx-0" href="#"><h1>Sam Cotter</h1></a>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-1">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#" class="active">Contact</a></li>
-                </ul>
-            </nav>
+        </nav>
+
+
+    <!-- MAIN CONTENT SECTION -->
+    <div id="wrap">
+    <div class="container mt-4 px-5 container1 clear-top" id="main">
+        <div class="row first-row">
+                <div class="col-md-12 pt-3">
+                    <h2 class="font-weight-bold">Contact Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <form class="h-25">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
+                                placeholder="Charles Barkley">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Email@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Start Typing..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary my-0">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <div class="content">
-        <!--Main content-->
-        <div class="main">
-            <h1 class="page-title">Contact</h1>
-            <form action="#" class="contact">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Charles Barkley">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" placeholder="example@gmail.com">
-                <label for="name">Message</label>
-                <textarea rows="10" cols="40" name="message" id="message"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
-        <div id="social" class="module">
-            <h2>Connect with Me</h2>
-
-            <a href="https://github.com/swcotter"><img src="assets/images/github.png"></a>
-            <a href="https://www.linkedin.com/in/sam-cotter/"><img src="assets/images/linkedin.png"></a>
-        </div>
-
+    </div>    
+    <!-- FOOTER SECTION -->
+    <div class="align-content-end">
+        <footer class="footer d-flex justify-content-center">
+            <div class="container m-0 p-0 w-100">
+                <div class="footer-copyright text-center">©2019 Copyright</div>
+            </div>
+        </footer>
     </div>
 
-
-    <footer>
-        &copy; Copyright 2019 Sam Cotter
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

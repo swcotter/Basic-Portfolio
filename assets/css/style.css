@@ -1,199 +1,100 @@
+/* WORK WITH TUTOR TO FIGURE OUT HOW TO GET A STICKY FOOTER */
 html {
-    position: relative;
+    height: 100%;
 }
-html, body {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    background-color: #dddddd;
-    background-image: url("../images/white-waves/white-waves.png");
+
+body {
+    background-image: url("images/funky-lines.png");
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
+.navbar {
+    border-bottom: 2px solid #393F44;                 
 }
-a {
-    text-decoration: none;
+.navbar-brand {
+    background-color: #4aaaa5;
 }
 h1 {
-    font-size: 2em;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
 }
-h2 {
-    font-size: 1.3em;
-}
-header {
+.navRow {
     width: 100%;
-    height: auto;
-    border-bottom: 2px solid #cccccc;
-    background-color: #ffffff;
 }
-header .container {
-    width: 960px;
-    margin: 0 auto;
-}
-.name, .nav {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-}
-.name {
-    width: 50%;
-}
-.logo {
-    display: inline-block;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 2em;
-    letter-spacing: 0.04em;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    padding: 1em;
-    width: auto;
-}
-.nav {
-    width: 49%;
-    text-align: right;
-    color: #b1adb3;
-    font-weight: normal;
-}
-.nav ul li {
-    display: inline-block;
-    padding-left: 1em;
-    margin-left: 1em;
-}
-.nav ul li a {
-    color: #b1adb3;
-    text-decoration: none;
-}
-.content {
-    width: 960px;
-    clear: both;
-    margin: 0 auto 6em auto;
-}
-.main {
-    display: inline-block;
-    width: 570px;
-    margin: 40px 0;
-    padding: 40px;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-}
-.main h1 {
-    font-size: 2em;
-    font-weight: bold;
-    padding-bottom: 1em;
-    margin-bottom: 0.8em;
-    border-bottom: 2px solid #dddddd;
-}
-.main p {
-    font-size: 18px;
-    line-height: 1.5em;
-    margin-bottom: 2em;
-}
-img.headshot {
-    float: left;
-    padding: 0 1em 1em 0;
-    width: 275px;
-    height: 200px;
-}
-/*Portfolio Page*/
-
-.portfolio-item {
-    display: inline-block;
-    position: relative;
-    width: 270px;
-    height: 200px;
-    transition: transform .2s ease-out;
-}
-.portfolio-item:nth-child(even) {
-    margin-left: 25px;
-}
-.item-name1 {
-    position: relative;
-    top: -100px;
-    text-align: center;
-    background-color: #4aaaa5;
-    padding: 1em;
-    color: #ffffff;
-    z-index: 1000;
-    float: left;
-    height: 30px;
-    width: 200px;
-}
-.item-name2 {
-    position: relative;
-    top: -100px;
-    text-align: center;
-    background-color: #4aaaa5;
-    padding: 1em;
-    color: #ffffff;
-    z-index: 1000;
+.navBar-toggler {
+    align-items: none;
     float: right;
-    height: 30px;
-    width: 200px;
 }
-.item-name3 {
-    position: relative;
-    top: -100px;
-    text-align: center;
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #DD524A;
+    font-size: 25px;
+    
+}
+.first-row {
+    border-bottom: 2px solid #cccccc;
+
+}
+
+
+.container1 {
+    background-color: #ffffff;
+    border: 1px solid #393F44; 
+    margin-bottom: 80px; /*need this because pb-5 isn't big enough*/
+}
+button[type=submit]:hover {
+    background-color: #cccccc;
+    color: #393F44;
+}
+.btn-primary {
     background-color: #4aaaa5;
-    padding: 1em;
     color: #ffffff;
-    z-index: 1000;
-    height: 30px;
-    width: 200px;
+    border-color: #393F44;
 }
-.item-name4 {
-    position: relative;
-    top: -100px;
-    text-align: center;
-    background-color: #4aaaa5;
-    padding: 1em;
-    color: #ffffff;
-    z-index: 1000;
-    height: 30px;
-    width: 200px;
-}
-/*Contact*/
-.contact {
-    width: 540px;
-}
-.contact label {
+
+
+.footer-copyright {
     display: block;
-    padding-bottom: 0.5em;
-}
-.contact input, .contact textarea {
-    width: 100%;
-    border: 1px solid #cccccc;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    font-size: .9em;
-}
-.contact input[type="submit"] {
-    width: auto;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    border: none;
-    padding: 1em 2em;
-    font-size: 1em;
-}
-
-/*footer*/
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 3em;
-    text-align: center;
-    font-size: 0.8em;
+    height: 50px;
+    font-weight: 100;
     color: #cccccc;
-    background-color: #666666;
-    border-top: 7px solid #4aaaa5;
+    font-size: 12px;
+}
+.footer {
+    position: sticky;
+    bottom: 0px;
+    height: 60px;
+    background-color: #393F44;
+    border-top: 5px solid #4aaaa5;
+    display: block;
+    margin-bottom: -60px;
+}
+#wrap {
+    min-height: 100%;
+}
+#main {
+        overflow:auto;
+        padding-bottom:65px; /* this needs to be bigger than footer height*/
+    
 }
 
-#social {
-	width: 270px;
-	float: right;
-	text-align: center;
+
+/* PORTFOLIO ONLY CONTENT */
+.btn-lrg {
+    width: 100%;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    background-color: #4aaaa5;
+    margin-top: 46%;
+    border-radius: 0px;
+    color: #ffffff;
+    line-height: 2.6;
 }
+.btn-lrg:hover {
+    background-color: #3b8884;
+}
+
+
