@@ -101,3 +101,9 @@ button[type=submit]:hover {
     width: 100px;
     height: 100px;
 }
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
