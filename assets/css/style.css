@@ -97,4 +97,7 @@ button[type=submit]:hover {
     background-color: #3b8884;
 }
 
-
+.menuIcon {
+    width: 100px;
+    height: 100px;
+}
